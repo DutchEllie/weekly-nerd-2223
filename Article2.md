@@ -45,6 +45,23 @@ There is a textual representation of WebAssembly called WAT (WebAssembly Text) a
 ```
 
 The above code is a Hello World-type function in WebAssembly.
-The code syntax itself looks a bit like Javascript and LISP had a child together, making it possibly the most ugly code ever written.
-I have to say, I am sort of disappointed to find out that the similatities between LISP and WASM end at the syntax because LISP is quite cool, but I digress.
+The syntax looks a little like LISP, which is unfortunate for readability, but does help in its basedness-factor.
 
+## My experience
+
+I have written two websites using WebAssembly myself, the most impressive one being [proper-website-2](https://dutchellie.nl/DutchEllie/proper-website-2).
+This was my website for a while until I replaced it with a SvelteKit website.
+The website itself is still hosed on [old.quenten.nl](https://old.quenten.nl/) if you fancy giving it a visit.
+
+The code of this website was written using Go with a framework called [go-app](https://go-app.dev/), which unfortunately has not seen an update in over a year now.
+The website was a joy to write and it was very interesting to work with a framework like this, that facilitates not only everything you need to write a website with exclusively WebAssembly, but also makes it a progressive webapp without you having to put in any work at all!
+Now, I did make some [awful code that only a mother could love](https://dutchellie.nl/DutchEllie/proper-website-2/src/branch/main/src/guestbook.go) back then, but that's besides the point.
+
+I found that the website is quite fast, but it isn't noticable against any other webapp that just uses Javascript instead.
+The biggest bit of loading time is found in the initial loading of the app, where you have to download several megabytes of WASM file to run the website :).
+
+## Closing words
+
+I find WebAssembly to be a promising technology for the web and want to use it more in the future, if I ever get the chance.
+There are also applications of WebAssembly that fall outside the browser, such as creating entirely platform independant application containers with Docker.
+I am definitely going to try to make use of these use cases for WebAssembly.

@@ -69,7 +69,8 @@ It's a corporate advertisment literally telling you you're ugly and should find 
 
 
 
-[^1]: Exhibition image in Dutch ![exhibition image](image.png)
+[^1]: Exhibition image in Dutch 
+[exhibition image](image.png)
 
 
 
